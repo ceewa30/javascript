@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+    color:aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 4px;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 1st background-color;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color:darkgray;
+    color: #fff;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left {
+    position: absolute;
+    left: 0;
+    background-color: #f1f1f1;
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-naturaltitanium-select?wid=940&hei=1112&fmt=png-alpha&.v=1692893982740");
+    background-size: cover;
+}
+
+.split.right {
+    position: absolute;
+    right: 0;
+    background-color:antiquewhite;
+    background-image: url("https://image-us.samsung.com/us/smartphones/galaxy-z-fold6/gallery/01-Q6-Pink-1600x1200.jpg?$product-details-jpg$");
+    background-size: cover;
+}
+
+.active-left .left {
+    width: 75%;
+}
+
+.active-left .right {
+    width: 25%;
+}
+
+.active-right .left {
+    width: 25%;
+}
+
+.active-right .right {
+    width: 75%;
+}
+
+.left , .right {
+    transition: width 2s ease-in-out;
+}
