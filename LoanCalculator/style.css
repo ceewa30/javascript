@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.loan-container {
+    background-color:darkcyan;
+    border-radius: 10px;
+    padding: 20px;
+    color:aliceblue;
+}
+
+.loan-container h1 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+
+}
+.loan-container div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    font-size: 1rem;
+    height: 20px;
+}
+
+.payment {
+    font-weight: 600;
+    font-size: 1rem;
+}
