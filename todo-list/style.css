@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    background-color:cornflowerblue;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+#taskInput {
+    width: 100%;
+    padding: 10px;
+    height: 12px;
+    margin-right: 10px;
+    border: none;
+}
+
+#addTaskBtn {
+    padding: 10px;
+    background-color:darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-wrap: nowrap;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
+
+li {
+    width: 100%;
+    padding: 10px;
+}
+
+li:nth-child(odd) {
+    background-color:cornflowerblue;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: green;
+}
